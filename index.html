@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Vocacional - Tecnologia da Informação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container main-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h1 class="mb-2"><i class="fas fa-laptop-code"></i> Teste Vocacional</h1>
+                        <p class="mb-0 fs-5">Descubra sua área ideal em Tecnologia da Informação</p>
+                    </div>
+                    <div class="card-body p-4">
+                        <div id="quiz-container">
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="text-muted">Progresso</span>
+                                    <span class="text-muted" id="progress-text">0%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 0%" id="progress-bar"></div>
+                                </div>
+                            </div>
+
+                            <form id="quiz-form">
+                                <!-- Questão 1 -->
+                                <div class="question-card mb-4 p-4 bg-light rounded-3">
+                                    <div class="d-flex align-items-start mb-3">
+                                        <span class="question-number">1</span>
+                                        <h5 class="mb-0">Quando a internet ou equipamento eletrônico da sua casa não está funcionando muito bem. Você:</h5>
+                                    </div>
+                                    <div class="ms-5">
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q1" id="q1a" value="A" required>
+                                            <label class="form-check-label" for="q1a">
+                                                Pergunto para todos da casa se notaram alguma mudança, para diagnosticar o problema e ajudar a melhorar. Gosto de colaborar com todos.
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q1" id="q1b" value="B">
+                                            <label class="form-check-label" for="q1b">
+                                                Acesso o sistema e descubro o problema para solucioná-lo rapidamente. O (a) sabe tudo da tecnologia está on!
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q1" id="q1c" value="C">
+                                            <label class="form-check-label" for="q1c">
+                                                Ligo para a assistência, pois são profissionais mais capacitados para resolver os problemas da forma mais segura. 
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q1" id="q1d" value="D">
+                                            <label class="form-check-label" for="q1d">
+                                                Eu sou a pessoa que noto a piora na qualidade ou problema e reporto para que alguém assuma e resolva com a expertise necessária. 
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Questão 2 -->
+                                <div class="question-card mb-4 p-4 bg-light rounded-3">
+                                    <div class="d-flex align-items-start mb-3">
+                                        <span class="question-number">2</span>
+                                        <h5 class="mb-0">Quando você pensa na sua profissão, você se imagina:</h5>
+                                    </div>
+                                    <div class="ms-5">
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q2" id="q2a" value="A" required>
+                                            <label class="form-check-label" for="q2a">
+                                                Ajudando as pessoas com manutenção e soluções de problemas cotidianos e situações mais complexas. 
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q2" id="q2b" value="B">
+                                            <label class="form-check-label" for="q2b">
+                                                Desenvolvendo aplicativos, jogos, sites e até sistemas.
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q2" id="q2c" value="C">
+                                            <label class="form-check-label" for="q2c">
+                                                Administrando dados e cuidando da segurança de informações confidenciais de usuários da internet, criando soluções inteligentes para melhor protegê-los. 
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q2" id="q2d" value="D">
+                                            <label class="form-check-label" for="q2d">
+                                                Utilizando softwares, certificando-me do melhor funcionamento deles e reportando possíveis problemas.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Questão 3 -->
+                                <div class="question-card mb-4 p-4 bg-light rounded-3">
+                                    <div class="d-flex align-items-start mb-3">
+                                        <span class="question-number">3</span>
+                                        <h5 class="mb-0">Dentre as opções abaixo, qual você acredita que seja a sua melhor qualidade:</h5>
+                                    </div>
+                                    <div class="ms-5">
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q3" id="q3a" value="A" required>
+                                            <label class="form-check-label" for="q3a">
+                                                Sou eficaz na resolução de problemas.
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q3" id="q3b" value="B">
+                                            <label class="form-check-label" for="q3b">
+                                                Sou criativo(a).
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q3" id="q3c" value="C">
+                                            <label class="form-check-label" for="q3c">
+                                                Sou astuto(a).
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q3" id="q3d" value="D">
+                                            <label class="form-check-label" for="q3d">
+                                                Sou analítico(a).
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Questão 4 -->
+                                <div class="question-card mb-4 p-4 bg-light rounded-3">
+                                    <div class="d-flex align-items-start mb-3">
+                                        <span class="question-number">4</span>
+                                        <h5 class="mb-0">Você está no computador e o software apresenta problemas de funcionamento. Qual solução você apresentaria:</h5>
+                                    </div>
+                                    <div class="ms-5">
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q4" id="q4a" value="A" required>
+                                            <label class="form-check-label" for="q4a">
+                                                Desenvolveria um aplicativo novo para suprir as necessidades elencadas pelo meu chefe.
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q4" id="q4b" value="B">
+                                            <label class="form-check-label" for="q4b">
+                                                Encontraria, de forma rápida, o problema do sistema utilizado, levaria a solução à minha equipe e, se necessário, ajudaria no que fosse possível para resolver tudo em conjunto.
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q4" id="q4c" value="C">
+                                            <label class="form-check-label" for="q4c">
+                                                Avaliaria primeiro se todas as informações e dados dos usuários estão seguras e então pensaria na melhor solução.
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q4" id="q4d" value="D">
+                                            <label class="form-check-label" for="q4d">
+                                                Encontraria o problema no sistema e aplicaria atualizações para modernizar e melhorar o software.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Questão 5 -->
+                                <div class="question-card mb-4 p-4 bg-light rounded-3">
+                                    <div class="d-flex align-items-start mb-3">
+                                        <span class="question-number">5</span>
+                                        <h5 class="mb-0">No seu tempo livre, você gosta de:</h5>
+                                    </div>
+                                    <div class="ms-5">
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q5" id="q5a" value="A" required>
+                                            <label class="form-check-label" for="q5a">
+                                                Estar com as pessoas que eu gosto, ajudando-as em suas tarefas.
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q5" id="q5b" value="B">
+                                            <label class="form-check-label" for="q5b">
+                                                Jogar vídeo game.
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q5" id="q5c" value="C">
+                                            <label class="form-check-label" for="q5c">
+                                                Uso meu tempo livre para organizar meus documentos, informações e dados.
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="radio" name="q5" id="q5d" value="D">
+                                            <label class="form-check-label" for="q5d">
+                                                Navegar pela internet descobrindo novos aplicativos, sites e softwares.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-center mt-5">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-check-circle me-2"></i>Ver Meu Resultado
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div id="result-container" style="display: none;">
+                            <div class="result-card text-center" id="result-content"></div>
+                            <div class="text-center">
+                                <button class="btn btn-outline-primary btn-lg" onclick="restartQuiz()">
+                                    <i class="fas fa-redo me-2"></i>Refazer Teste
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+   
+</body>
+</html
